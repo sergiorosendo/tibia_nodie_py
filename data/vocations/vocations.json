@@ -1,0 +1,56 @@
+{
+	"vocations": [
+		{
+			"id": "1",
+			"name": "Elder Druid",
+			"capLvUp": 10,
+			"hpLvUp": 5,
+			"mpLvUp": 30,
+			"regen": {
+				"hpTicks": 12,
+				"hpGain": 1,
+				"mpTicks": 2,
+				"mpGain": 2
+			}
+		},
+		{
+			"id": "2",
+			"name": "Elite Knight",
+			"capLvUp": 25,
+			"hpLvUp": 15,
+			"mpLvUp": 5,
+			"regen": {
+				"hpTicks": 4,
+				"hpGain": 1,
+				"mpTicks": 6,
+				"mpGain": 2
+			}
+		},
+		{
+			"id": "3",
+			"name": "Master Sorcerer",
+			"capLvUp": 10,
+			"hpLvUp": 5,
+			"mpLvUp": 30,
+			"regen": {
+				"hpTicks": 12,
+				"hpGain": 1,
+				"mpTicks": 2,
+				"mpGain": 2
+			}
+		},
+		{
+			"id": "4",
+			"name": "Royal Paladin",
+			"capLvUp": 20,
+			"hpLvUp": 10,
+			"mpLvUp": 15,
+			"regen": {
+				"hpTicks": 6,
+				"hpGain": 1,
+				"mpTicks": 3,
+				"mpGain": 2
+			}
+		}
+	]
+}

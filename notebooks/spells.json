@@ -1,0 +1,311 @@
+{
+	"spells": [
+		{
+			"vocations": [
+				"Elite Knight"
+			],
+			"group": "attack",
+			"id": "62",
+			"name": "Annihilation",
+			"words": "exori gran ico",
+			"mana": 300,
+			"soul": 0,
+			"cd": 30,
+			"groupCd": 4
+		},
+		{
+			"vocations": [
+				"Elite Knight"
+			],
+			"group": "attack",
+			"id": "80",
+			"name": "Berserk",
+			"words": "exori",
+			"mana": 115,
+			"soul": 0,
+			"cd": 4,
+			"groupCd": 2
+		},
+		{
+			"vocations": [
+				"Elite Knight"
+			],
+			"group": "attack",
+			"id": "61",
+			"name": "Brutal Strike",
+			"words": "exori ico",
+			"mana": 30,
+			"soul": 0,
+			"cd": 6,
+			"groupCd": 2
+		},
+		{
+			"vocations": [
+				"Master Sorcerer"
+			],
+			"group": "support",
+			"id": "-1",
+			"name": "Great Fireball Rune",
+			"words": "adori mas flam",
+			"mana": 530,
+			"soul": 3,
+			"cd": 2,
+			"groupCd": 2
+		},
+		{
+			"vocations": [
+				"Royal Paladin"
+			],
+			"group": "support",
+			"id": "-1",
+			"name": "Holy Missile Rune",
+			"words": "adori san",
+			"mana": 300,
+			"soul": 3,
+			"cd": 2,
+			"groupCd": 2
+		},
+		{
+			"vocations": [
+				"Elder Druid"
+			],
+			"group": "support",
+			"id": "-1",
+			"name": "Avalanche Rune",
+			"words": "adori mas frigo",
+			"mana": 530,
+			"soul": 3,
+			"cd": 2,
+			"groupCd": 2
+		},
+		{
+			"vocations": [
+				"Elder Druid"
+			],
+			"group": "support",
+			"id": "-1",
+			"name": "Stone Shower Rune",
+			"words": "adori mas tera",
+			"mana": 430,
+			"soul": 3,
+			"cd": 2,
+			"groupCd": 2
+		},
+		{
+			"vocations": [
+				"Master Sorcerer"
+			],
+			"group": "support",
+			"id": "-1",
+			"name": "Sudden Death Rune",
+			"words": "adori gran mort",
+			"mana": 985,
+			"soul": 5,
+			"cd": 2,
+			"groupCd": 2
+		},
+		{
+			"vocations": [
+				"Master Sorcerer"
+			],
+			"group": "support",
+			"id": "-1",
+			"name": "Thunderstorm Rune",
+			"words": "adori mas vis",
+			"mana": 430,
+			"soul": 3,
+			"cd": 2,
+			"groupCd": 2
+		},
+		{
+			"vocations": [
+				"Elder Druid"
+			],
+			"group": "support",
+			"id": "-1",
+			"name": "Ultimate Healing Rune",
+			"words": "adura vita",
+			"mana": 400,
+			"soul": 3,
+			"cd": 2,
+			"groupCd": 2
+		},
+		{
+			"vocations": [
+				"Elder Druid"
+			],
+			"group": "support",
+			"id": "-1",
+			"name": "Wild Growth Rune",
+			"words": "adevo grav vita",
+			"mana": 600,
+			"soul": 5,
+			"cd": 2,
+			"groupCd": 2
+		},
+		{
+			"vocations": [
+				"Master Sorcerer"
+			],
+			"group": "support",
+			"id": "-1",
+			"name": "Magic Wall Rune",
+			"words": "adevo grav tera",
+			"mana": 750,
+			"soul": 5,
+			"cd": 2,
+			"groupCd": 2
+		},
+		{
+			"vocations": [
+				"Elder Druid"
+			],
+			"group": "support",
+			"id": "-1",
+			"name": "Paralyze Rune",
+			"words": "adana ani",
+			"mana": 1400,
+			"soul": 3,
+			"cd": 2,
+			"groupCd": 2
+		},
+		{
+			"vocations": [
+				"Elder Druid"
+			],
+			"group": "support",
+			"id": "-1",
+			"name": "Ultimate Healing Rune",
+			"words": "adura vita",
+			"mana": 400,
+			"soul": 3,
+			"cd": 2,
+			"groupCd": 2
+		},
+		{
+			"vocations": [
+				"Elite Knight"
+			],
+			"group": "support",
+			"id": "131",
+			"name": "Charge",
+			"words": "utani tempo hur",
+			"mana": 100,
+			"soul": 0,
+			"cd": 2,
+			"groupCd": 2
+		},
+		{
+			"vocations": [
+				"Master Sorcerer",
+				"Elder Druid",
+				"Royal Paladin",
+				"Elite Knight"
+			],
+			"group": "support",
+			"id": "6",
+			"name": "Haste",
+			"words": "utani hur",
+			"mana": 60,
+			"soul": 0,
+			"cd": 2,
+			"groupCd": 2
+		},
+		{
+			"vocations": [
+				"Master Sorcerer",
+				"Elder Druid"
+			],
+			"group": "support",
+			"id": "39",
+			"name": "Strong Haste",
+			"words": "utani gran hur",
+			"mana": 100,
+			"soul": 0,
+			"cd": 2,
+			"groupCd": 2
+		},
+		{
+			"vocations": [
+				"Master Sorcerer"
+			],
+			"group": "healing",
+			"id": "3",
+			"name": "Ultimate Healing",
+			"words": "exura vita",
+			"mana": 160,
+			"soul": 0,
+			"cd": 1,
+			"groupCd": 1
+		},
+		{
+			"vocations": [
+				"Royal Paladin"
+			],
+			"group": "healing",
+			"id": "36",
+			"name": "Salvation",
+			"words": "exura gran san",
+			"mana": 210,
+			"soul": 0,
+			"cd": 1,
+			"groupCd": 1
+		},
+		{
+			"vocations": [
+				"Elite Knight"
+			],
+			"group": "healing",
+			"id": "123",
+			"name": "Wound Cleansing",
+			"words": "exura ico",
+			"mana": 40,
+			"soul": 0,
+			"cd": 1,
+			"groupCd": 1
+		},
+		{
+			"vocations": [
+				"Elder Druid"
+			],
+			"group": "healing",
+			"id": "84",
+			"name": "Heal Friend",
+			"words": "exura sio",
+			"mana": 140,
+			"soul": 0,
+			"cd": 1,
+			"groupCd": 1
+		},
+		{
+			"vocations": [
+				"Master Sorcerer",
+				"Elder Druid",
+				"Royal Paladin"
+			],
+			"group": "healing",
+			"id": "2",
+			"name": "Intense Healing",
+			"words": "exura gran",
+			"mana": 70,
+			"soul": 0,
+			"cd": 1,
+			"groupCd": 1
+		},
+		{
+			"vocations": [
+				"Master Sorcerer",
+				"Elder Druid", 
+				"Royal Paladin"
+			],
+			"group": "healing",
+			"id": "1",
+			"name": "Light Healing",
+			"words": "exura",
+			"mana": 20,
+			"soul": 0,
+			"cd": 1,
+			"groupCd": 1
+		}
+	]	
+}

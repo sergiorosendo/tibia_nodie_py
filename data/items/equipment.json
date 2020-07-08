@@ -1,0 +1,56 @@
+{
+	"equipments": [
+		{
+			"weight": 800,
+			"slotType": "feet",
+			"duration": 14400,
+			"regen": {
+				"hpGain": 3,
+				"hpTicks": 6,
+				"mpGain": 12,
+				"mpTicks": 6
+			},
+			"id": "2640",
+			"name": "pair of soft boots"
+		},
+		{
+			"weight": 80,
+			"slotType": "ring",
+			"duration": 450,
+			"regen": {
+				"hpGain": 6,
+				"hpTicks": 6,
+				"mpGain": 24,
+				"mpTicks": 6
+			},
+			"id": "2216",
+			"name": "ring of healing"
+		},
+		{
+			"weight": 80,
+			"slotType": "ring",
+			"duration": 1200,
+			"regen": {
+				"hpGain": 2,
+				"hpTicks": 6,
+				"mpGain": 8,
+				"mpTicks": 6
+			},
+			"id": "2205",
+			"name": "life ring"
+		},
+		{
+			"weight": 1150,
+			"slotType": "head",
+			"duration": 3600,
+			"regen": {
+				"hpTicks": 6,
+				"hpGain": 2,
+				"mpTicks": 6,
+				"mpGain": 8
+			},
+			"id": "26131",
+			"name": "tiara of power"
+		}
+	]	
+}
