@@ -1,6 +1,6 @@
 Python version of [Tibia NoDie](https://github.com/sergiorosendo/tibia_no_die).
 
-# Under development
+## Under development
 
 Currently under development. Python features used: 
 
@@ -10,8 +10,8 @@ Currently under development. Python features used:
 - Keyboard control
 - .json and .ini files parsing
 
-# Tibia NoDie
-*NoDie* features macros, shortcuts and auto-healers for the PC game Tibia. Created with Python, featuring heavy OOP, modularization and scalability.
+## Tibia NoDie
+*NoDie* features macros, shortcuts and auto-healers for the PC game Tibia. 
 
 ## Main Features
 
