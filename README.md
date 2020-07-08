@@ -2,6 +2,7 @@
 Tibia bot using Python. Currently under development.
 
 Python features used: 
+
 	- OOP
 	- Threads
 	- Macros
