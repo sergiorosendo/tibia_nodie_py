@@ -1,3 +1,9 @@
+# Under development
+Tibia bot using Python.
+
+Code features:
+OOP, threads, macros, image matching, keyboard control.
+
 # Tibia NoDie
 *NoDie* features macros, shortcuts and auto-healers for the PC game Tibia. Created with Python, featuring heavy OOP, modularization and scalability.
 
