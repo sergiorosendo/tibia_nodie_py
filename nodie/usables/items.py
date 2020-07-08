@@ -1,7 +1,8 @@
 import json
 
-from .regeneration import Regeneration
+from ..regeneration import Regeneration
 from .resources import Usable
+
 
 class Item(Usable):
 
@@ -19,11 +20,6 @@ class Equipment(Item):
         super().__init__(id, name, weight, duration, keys)
         self.slotType = slotType
         self.regen = Regeneration(**regen)
-
-    def __str__(self):
-        dic = dict(self)
-        dic['regen'] = dict(self.regen)
-        return str(dic)
 
 
 class Food(Item):

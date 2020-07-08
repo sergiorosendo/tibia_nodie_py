@@ -1,43 +1,8 @@
-from abc import ABC, abstractmethod
-from threading import Thread
-from time import sleep
 import random
+from time import sleep
 
-from .win_api import send_key
-from .items import Item, Equipment, Food
-from .regeneration import Regeneration
-
-class Macro(Thread, ABC):
-
-    def __init__(self):
-        Thread.__init__(self, daemon=True)
-        ABC.__init__(self)
-
-    def act(self):
-        key = random.choice(self.keys)
-        sleepPeriod = self.cd + self.delta
-        # send key self.randomKey, sleep self.sleepPeriod, act loop
-
-    @property
-    def sleepPeriod(self):
-        return self.cd + self.delta
-
-    @property
-    @abstractmethod
-    def cd(self):
-        raise NotImplementedError
-
-    @property
-    @abstractmethod
-    def delta(self):
-        raise NotImplementedError
-
-    def run(self):
-        sleep(random.uniform(1, 5))
-        
-        while True:
-            self.usable.use()
-            sleep(self.cd + self.delta)
+from .macros import Macro
+from ..regeneration import Regeneration
 
 
 class SpellMacro(Macro):
@@ -161,21 +126,17 @@ class RuneMaker():
             self.wasteSpellMacro = WasteSpellMacro(self.wasteSpell, Regeneration.from_mpSec(self.runeSpellMacro.extraMpSec))
 
     def _reset_macros(self):
-        # TODO: check if threads need to be killed manually
-        # probably yes
-        self.runeMacro = None
-        self.wasteMacro = None
-        self.ringMacro = None
-        self.bootsMacro = None
-        self.helmetMacro = None
-        self.foodMacro = None
+        # TODO: check if threads need to be killed manually. Probably yes
+        self.ringMacro, self.bootsMacro, self.foodMacro, self.runeSpellMacro, self.wasteSpellMacro = None, None, None, None, None
 
     def activate_macros(self):
-        if self.ringMacro: self.ringMacro.start()
-        if self.bootsMacro: self.bootsMacro.start()
-        if self.foodMacro: self.foodMacro.start()        
-        if self.runeMacro: self.runeMacro.start()
-        if self.wasteMacro: self.wasteMacro.start()
+        for macro in self.macros:
+            macro.start()
+            sleep(random.uniform(0, 0.25))
+
+    @property
+    def macros(self):
+        return [self.ringMacro, self.bootsMacro, self.foodMacro, self.runeSpellMacro, self.wasteSpellMacro]
 
     def deactivate(self):
         # suspend or kill each macro's thread

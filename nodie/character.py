@@ -41,20 +41,21 @@ class Vocation():
 
     @classmethod
     def fromjson(cls, file):
-        V = []
-        with open(file) as f:
-            dic = json.load(f)
+        with open(file) as f: 
+            dic = json.load(f) 
+        lst = dic[cls.__name__.lower() + 's']
+
+        D = dict()
+        for obj in lst:
+            obj = cls(**obj)
+            D[obj.name] = obj
         
-        if 'vocations' in dic:
-            lst = []
-            for obj in dic['vocations']:
-                lst.append(cls(**obj))
-            return lst
-        return cls(**dic)
+        return D
 
     def set_spells(self, spells):
-        self.spells = []
+        self.spells = dict()
         if spells is None: return
-        for sp in spells:
+        
+        for sp in spells.values():
             if self.name in sp.vocations:
-                self.spells.append(sp)
+                self.spells[sp.name] = sp

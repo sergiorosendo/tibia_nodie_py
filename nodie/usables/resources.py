@@ -1,6 +1,7 @@
 import random, configparser, json, os
 
-from .win_api import send_key
+from ..win_api import send_key
+
 
 class Usable():
 
@@ -20,7 +21,6 @@ class Usable():
 
     def read_cfg_keys(self):
         cfgKeys = configparser.ConfigParser()
-        #print(os.path.join('hotkeys.ini'))
         cfgKeys.read('hotkeys.ini')
 
         usables = cfgKeys['Usables']
@@ -31,11 +31,14 @@ class Usable():
     def fromjson(cls, file):
         with open(file) as f: 
             dic = json.load(f) 
-    
-        lst = []
-        for obj in dic[cls.__name__.lower() + 's']:
-            lst.append(cls(**obj))
-        return lst
+        lst = dic[cls.__name__.lower() + 's']
+
+        D = dict()
+        for obj in lst:
+            obj = cls(**obj)
+            D[obj.name] = obj
+        
+        return D
 
     def img(self):
         pass
@@ -44,7 +47,7 @@ class Usable():
         return iter(vars(self).items())
 
     def __str__(self):
-        return str(dict(self))
+        return str(self.__dict__)
 
 
 
