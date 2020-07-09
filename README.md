@@ -22,8 +22,8 @@ The bot should also try to hide itself. It will avoid repetitive behavior while 
 
 #### Auto Healer - Global Server vs Ot Servers
 
-The main Tibia server does not allow external software to directly access the game window, which is a invaluable source of information for the auto healer. 
-A workaround for this exists but the healer should have slower reaction times due to its limited acess. So for now, for the main Tibia Client, the plan is to develop a auto mana healer, as this healer can be useful even if acting with slightly higher delays.
+The main Tibia server does not allow external software to directly access the game window, which is a invaluable source of information. 
+A workaround for this exists but, due to limited access, the healer should have slower reaction times. For now, for the main Tibia Client, the plan is to develop a auto mana healer, as this healer can be useful even if acting with slightly higher delays.
 
 As for Otservers, if the bot has unrestriscted access to the game window, the healer should be extremely fast and smart, managing both hp and mp. 
 
