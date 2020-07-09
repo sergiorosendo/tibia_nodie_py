@@ -10,6 +10,22 @@ Currently under development. Python features used:
 - Keyboard control
 - .json and .ini files parsing
 
+### Objective
+
+The python version aspires to be a more scalable, maintanable version of the ahk bot. 
+
+NoDie Py aspires to be a game inside the game. It should have access to player vocation, resources, hotkeys, game window and be able to take the best action in every scenario.
+
+##### Avoiding Detection
+
+The bot should also try to hide itself. It will avoid repetitive behavior while still being extremely efficient in assisting the player.
+
+##### Auto Healer in Global vs OtServers
+
+The main Tibia server does not allow direct access to game screen pixels, which is invaluable for the auto healer. There is a workaround for this but the healer should have slower reactions due to limited acess, with higher delays, to the game window. The current plan is to develop a mana healer for Main Tibia, as healing mana does not need to be as reactive as healing hp.  
+
+For Otservers, if the bot has unrestriscted access to game window information, the healer should be extremely fast, smart and efficient. 
+
 ## Tibia NoDie
 *NoDie* features macros, shortcuts and auto-healers for the PC game Tibia. 
 
