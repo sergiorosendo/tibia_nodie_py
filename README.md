@@ -22,9 +22,10 @@ The bot should also try to hide itself. It will avoid repetitive behavior while 
 
 ##### Auto Healer in Global vs OtServers
 
-The main Tibia server does not allow direct access to game screen pixels, which is invaluable for the auto healer. There is a workaround for this but the healer should have slower reactions due to limited acess, with higher delays, to the game window. The current plan is to develop a mana healer for Main Tibia, as healing mana does not need to be as reactive as healing hp.  
+The main Tibia server does not allow external software to directly access the game window, which is a invaluable source of information for the auto healer. 
+A workaround for this exists but the healer should have slower reaction times due to its limited acess. So for now, for the main Tibia Client, the plan is to develop a auto mana healer, as this healer can be useful even if acting with slightly higher delays.
 
-For Otservers, if the bot has unrestriscted access to game window information, the healer should be extremely fast, smart and efficient. 
+As for Otservers, if the bot has unrestriscted access to the game window, the healer should be extremely fast and smart, managing both hp and mp. 
 
 ## Tibia NoDie
 *NoDie* features macros, shortcuts and auto-healers for the PC game Tibia. 
