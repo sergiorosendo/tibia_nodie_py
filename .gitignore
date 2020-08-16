@@ -2,9 +2,11 @@
 .ipynb_checkpoints/*
 notebooks/*
 __pycache__/*
-
+__pycache__/
+.idea/
 # Specific files:
 draft.py
+resources.txt
 
 # Compiled source #
 ###################
